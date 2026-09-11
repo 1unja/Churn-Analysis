@@ -1,0 +1,82 @@
+from sql.query import query_estimated_salary_churned, query_estimated_salary_not_churned
+from load_data import engine
+from functions.mann_whitney_fun import mann_whitney_test
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.stats import mannwhitneyu
+import numpy as np
+
+
+
+
+query_estimated_salary_churned, query_estimated_salary_not_churned = (pd.read_sql(query_estimated_salary_churned, engine)['estimated_salary'],
+                                                  pd.read_sql(query_estimated_salary_not_churned, engine)['estimated_salary'])
+
+
+
+
+############################################################################
+#TESTING ON INDEPENDENCE
+############################################################################
+
+result, new_df, effect_size = mann_whitney_test(u1 = query_estimated_salary_churned,
+                                                u2 = query_estimated_salary_not_churned,
+                                                group1_name = 'Churned',
+                                                group2_name = 'Not churned')
+
+print(f'p-value: {np.round(result.pvalue, 4)}')
+print(f'u-statistic: {result.statistic}')
+print(f'effect size: {np.round(effect_size, 4)}')
+print(new_df)
+
+
+
+
+############################################################################
+#PLOTTING
+############################################################################
+
+
+
+
+fig, axes = plt.subplots(ncols=2, nrows=2, figsize=(5.5, 3.5),
+                        layout="constrained")
+
+axes[0, 0].hist(query_estimated_salary_churned, bins = 25)
+axes[0, 0].set_xlabel("estimated_salary")
+axes[0, 0].set_title("Churn = Yes")
+axes[0,0].axvline(
+    np.median(query_estimated_salary_churned),
+    color="red",
+    label="Median"
+)
+axes[0,0].axvline(
+    np.mean(query_estimated_salary_churned),
+    color="green",
+    label="Mean"
+)
+axes[0,0].legend()
+
+
+
+axes[0, 1].hist(query_estimated_salary_not_churned, bins = 25)
+axes[0, 1].set_xlabel("estimated_salary")
+axes[0, 1].set_title("Churn = No")
+axes[0, 1].axvline(
+    np.median(query_estimated_salary_not_churned),
+    color="red",
+    label="Median"
+)
+axes[0, 1].axvline(
+    np.mean(query_estimated_salary_not_churned),
+    color="green",
+    label="Mean"
+)
+axes[0, 1].legend()
+
+
+
+axes[1, 0].boxplot([query_estimated_salary_churned, query_estimated_salary_not_churned])
+axes[1, 0].set_title("Churn = Yes")
+
+plt.show()
