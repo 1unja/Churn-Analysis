@@ -79,4 +79,5 @@ Overall, the results suggest that the observed difference in the overall balance
 ### 5.2 Tenure Analysis
 
 
+<img width="350" height="250" alt="Screenshot 2026-09-13 at 18 01 34" src="https://github.com/user-attachments/assets/c1552ca1-471a-4a5a-a3d5-b8b15ecc75bf" />
 
