@@ -48,7 +48,7 @@ Modeling Questions
 ### 5.1 Balance Analysis 
 
 
-The main issue is the presence of customers with zero balance. It creates a new problem for analysis, since the presence of these customers shifts
+The main issue is the presence of customers with zero balance. It creates a new problem for analysis, since the presence of these customers affects
 the means and medians. Then it's reasonable to split the data on three parts: 
 1. ''All customers''
 2. ''Only positive balance customers''
@@ -59,18 +59,24 @@ the means and medians. Then it's reasonable to split the data on three parts:
 
 &nbsp;
 
-In ''Only positive balance customers'' Mann-Whitney comparison test clearly shows no significant difference between the distributions. It's also visible on the graph, where medians are almost the same.
+For the ''Only positive balance customers'' Mann-Whitney comparison test clearly shows no statistically significant difference between the distributions. This is also reflected on the graph, where medians appear to be similar.
 
 
 <img width="580" height="250" alt="Screenshot 2026-09-13 at 14 39 12" src="https://github.com/user-attachments/assets/1300ab6a-b501-4e0f-a640-82a67a7f5b80" />
 
 &nbsp;
 
-In ''Proportion of Zero-Balance Customers'' comparison there is a significant difference between groups. Zero balance was more common among non-churned customers (39.1%) than among churned customers (24.5%).
+For the ''Proportion of Zero-Balance Customers'' Chi-square test of independence presented a statistically significant difference between groups. Zero balance was more common among non-churned customers (39.1%) than among churned customers (24.5%).
 
 
 <img width="400" height="250" alt="Screenshot 2026-09-13 at 15 02 40" src="https://github.com/user-attachments/assets/8764dc1a-f7c0-4a72-8484-0b7b50a7b23c" />
 
+&nbsp;
+
+Overall, the results suggest that the observed difference in the overall balance distributions is mainly driven by the presence of zero-balance customers. Among customers with a positive balance, the balance amount itself does not appear to be significantly associated with churn.
+
+
+### 5.2 Tenure Analysis
 
 
 
