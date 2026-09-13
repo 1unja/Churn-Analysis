@@ -56,13 +56,16 @@ The main problem is that customers with zero balance shift the distribution.
 &nbsp;
 
 After customers with empty balance were removed, it turned out, that there's no significant difference between distribution for people with positive balance, it 
-also can be presented on graph.
+also can be presented on the graph.
 
 <img width="580" height="250" alt="Screenshot 2026-09-13 at 14 39 12" src="https://github.com/user-attachments/assets/1300ab6a-b501-4e0f-a640-82a67a7f5b80" />
+
 &nbsp;
 
+Then it's reasonable to compare only amounts of zeros, which showed significant difference. It's possible to conclude that customers with
+empty had less risk of being churned.
 
-
+<img width="400" height="250" alt="Screenshot 2026-09-13 at 15 02 40" src="https://github.com/user-attachments/assets/8764dc1a-f7c0-4a72-8484-0b7b50a7b23c" />
 
 
 
