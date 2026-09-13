@@ -30,5 +30,16 @@ It contains 10,000 customer records and the following variables:
 Statistical Questions
 
 1. Which Customer characteristics associated with churn rate? 
-2. Are these associations significant? 
-3. What conclusions can be drawn from the statistical analysis?
+2. Are these associations significant?
+3. How strong are these associations? 
+4. What conclusions can be drawn from the statistical analysis?
+
+Modeling Questions
+
+4. Which variables are significant predictors of churn in the logistic regression model?
+5. How well does the logistic regression model performs?
+6. How reliable is the model and how well does it generalise to unseen data?
+
+## 4. Methods
+
+- 
