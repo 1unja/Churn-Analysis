@@ -52,6 +52,7 @@ The main problem is that customers with zero balance shift the distribution.
 
 
 <img width="800" height="250" alt="Screenshot 2026-09-13 at 14 38 45" src="https://github.com/user-attachments/assets/6585b225-949d-4114-a328-ea2f7c143d9c" />
+
 &nbsp;
 
 After customers with empty balance were removed, it turned out, that there's no significant difference between distribution for people with positive balance, it 
