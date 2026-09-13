@@ -45,27 +45,29 @@ Modeling Questions
 ## 5. Statistical Analysis
 
 
-### 5.1 Balance Analyse
+### 5.1 Balance Analysis 
 
 
-The main issue is a presence of customers with zero balance. It creates a new problem for analysis, since a presence of these customers shifts
-the distributions. Then it's reasonable to split the data on three parts: ''All customers'', ''Only positive balance customers'' and ''Amounts of zeros for each 
-churn status''.
+The main issue is the presence of customers with zero balance. It creates a new problem for analysis, since the presence of these customers shifts
+the means and medians. Then it's reasonable to split the data on three parts: 
+1. ''All customers''
+2. ''Only positive balance customers''
+3. ''Proportion of Zero-Balance Customers''.
 
 
 <img width="800" height="250" alt="Screenshot 2026-09-13 at 14 38 45" src="https://github.com/user-attachments/assets/6585b225-949d-4114-a328-ea2f7c143d9c" />
 
 &nbsp;
 
-After customers with empty balance were removed, it turned out, that there's no significant difference between distribution for people with positive balance, it 
-also can be presented on the graph.
+In ''Only positive balance customers'' Mann-Whitney comparison test clearly shows no significant difference between the distributions. It's also visible on the graph, where medians are almost the same.
+
 
 <img width="580" height="250" alt="Screenshot 2026-09-13 at 14 39 12" src="https://github.com/user-attachments/assets/1300ab6a-b501-4e0f-a640-82a67a7f5b80" />
 
 &nbsp;
 
-Then it's reasonable to compare only amounts of zeros, which showed significant difference. It's possible to conclude that customers with
-empty had less risk of being churned.
+In ''Proportion of Zero-Balance Customers'' comparison there is a significant difference between groups. Zero balance was more common among non-churned customers (39.1%) than among churned customers (24.5%).
+
 
 <img width="400" height="250" alt="Screenshot 2026-09-13 at 15 02 40" src="https://github.com/user-attachments/assets/8764dc1a-f7c0-4a72-8484-0b7b50a7b23c" />
 
