@@ -69,15 +69,16 @@ For the ''Only positive balance customers'' Mann-Whitney comparison test clearly
 For the ''Proportion of Zero-Balance Customers'' Chi-square test of independence presented a statistically significant difference between groups. Zero balance was more common among non-churned customers (39.1%) than among churned customers (24.5%).
 
 
-<img width="400" height="250" alt="Screenshot 2026-09-13 at 15 02 40" src="https://github.com/user-attachments/assets/8764dc1a-f7c0-4a72-8484-0b7b50a7b23c" />
+<img width="350" height="250" alt="Screenshot 2026-09-13 at 15 02 40" src="https://github.com/user-attachments/assets/8764dc1a-f7c0-4a72-8484-0b7b50a7b23c" />
 
 &nbsp;
 
 Overall, the results suggest that the observed difference in the overall balance distributions is mainly driven by the presence of zero-balance customers. Among customers with a positive balance, the balance amount itself does not appear to be significantly associated with churn.
 
 
-### 5.2 Tenure Analysis
+### 5.2 Products Number Analysis
 
+This factor contains categorical numbers(from 1 to 4) represented amount of products for each customer. Chi-square test of independence showed a statistically very significant difference between categories. Analysis showed contineo growth of the churned customers w
 
 <img width="350" height="250" alt="Screenshot 2026-09-13 at 18 01 34" src="https://github.com/user-attachments/assets/c1552ca1-471a-4a5a-a3d5-b8b15ecc75bf" />
 
