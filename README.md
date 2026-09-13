@@ -48,7 +48,9 @@ Modeling Questions
 ### 5.1 Balance Analyse
 
 
-The main problem is that customers with zero balance shift the distribution. 
+The main issue is a presence of customers with zero balance. It creates a new problem for analysis, since a presence of these customers shifts
+the distributions. Then it's reasonable to split the data on three parts: ''All customers'', ''Only positive balance customers'' and ''Amounts of zeros for each 
+churn status''.
 
 
 <img width="800" height="250" alt="Screenshot 2026-09-13 at 14 38 45" src="https://github.com/user-attachments/assets/6585b225-949d-4114-a328-ea2f7c143d9c" />
