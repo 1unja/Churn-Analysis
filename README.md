@@ -78,7 +78,13 @@ Overall, the results suggest that the observed difference in the overall balance
 
 ### 5.2 Products Number Analysis
 
-This factor contains categorical numbers(from 1 to 4) represented amount of products for each customer. Chi-square test of independence showed a statistically very significant difference between categories. Analysis showed contineo growth of the churned customers w
+This factor contains categorical numbers(from 1 to 4) represented amount of products for each customer. Chi-square test of independence showed a statistically very significant difference between categories. Analysis showed continuous growth of the percentage of churned customers with growth of product numbers:
+
+   churned  total   ratio
+0    348.0   4590  0.0758
+1   1409.0   5084  0.2771
+2    220.0    266  0.8271
+3     60.0     60  1.0000
 
 <img width="350" height="250" alt="Screenshot 2026-09-13 at 18 01 34" src="https://github.com/user-attachments/assets/c1552ca1-471a-4a5a-a3d5-b8b15ecc75bf" />
 
