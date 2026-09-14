@@ -44,6 +44,13 @@ Modeling Questions
 
 ## 5. Statistical Analysis
 
+### 5.0 Factors Without Significant Association
+
+Several factor didn't show a statistically significant association and not going to be discussed in the ''Statistical Analysis'' section.
+Excluded factors are:
+- credit card
+- estimated salary
+- tenure
 
 ### 5.1 Balance Analysis 
 
