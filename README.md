@@ -84,7 +84,7 @@ This factor contains discrete categorical variable with values from 0 to 3 repre
 - 1 product: 27.71% (1,409 out of 5,084 customers)
 - 2 products: 82.71% (220 out of 266 customers)
 - 3 products: 100.00% (60 out of 60 customers)
-- 
+  
 <img width="350" height="250" alt="Screenshot 2026-09-13 at 18 01 34" src="https://github.com/user-attachments/assets/c1552ca1-471a-4a5a-a3d5-b8b15ecc75bf" />
 
 &nbsp;
