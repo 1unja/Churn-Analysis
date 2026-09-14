@@ -78,12 +78,17 @@ Overall, the results suggest that the observed difference in the overall balance
 
 ### 5.2 Products Number Analysis
 
-This factor contains categorical numbers(from 1 to 4) represented amount of products for each customer. Chi-square test of independence showed a statistically very significant difference between categories. Analysis showed continuous growth of the percentage of churned customers with growth of 0.2771:
+This factor contains discrete categorical variable with values from 0 to 3 represented amount of products for each customer. Chi-square test of independence showed a statistically significant difference between categories. The analysis showed a strong increase in the proportion of churned customers as the number of products increased:
 
--  7.58 for 0 products
--  27.71 for 1 product
--  82.71 for 2 products
--  100.00 for 3 products
-
+- 0 products: 7.58% (348 out of 4,590 customers)
+- 1 product: 27.71% (1,409 out of 5,084 customers)
+- 2 products: 82.71% (220 out of 266 customers)
+- 3 products: 100.00% (60 out of 60 customers)
+- 
 <img width="350" height="250" alt="Screenshot 2026-09-13 at 18 01 34" src="https://github.com/user-attachments/assets/c1552ca1-471a-4a5a-a3d5-b8b15ecc75bf" />
+
+&nbsp;
+
+The results suggest a strong association between number of products and churn. The proportion of churned customers increases as the amount of products increases. Customers 
+with 2 and 3 products had a particularly high rates.
 
